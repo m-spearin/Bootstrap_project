@@ -87,8 +87,8 @@
             <div class="row no-gutter text-center">
               
          
-
-            <div class="card" style="width: 20rem;">
+              <!-- Containers for the invidule movie titles and dispcriptions -->
+            <div class="card shadow-lg p-3 mb-5 bg-white rounded" style="width: 20rem;">
                 <img class="card-img-top" src="./Images/kongskullisland.jpg" alt="kongskullisland">
                 <div class="card-body">
                   <h5 class="card-title">Kong Skull Island</h5>
@@ -107,7 +107,7 @@
               </div>
 
 
-            <div class="card mx-auto" style="width: 20rem;">
+            <div class="card mx-auto shadow-lg p-3 mb-5 bg-white rounded" style="width: 20rem;">
                 <img class="card-img-top" style="height: 195px;" src="./Images/ghostintheshell.jpg" alt="GHOST IN THE SHELL">
                 <div class="card-body">
                   <h5 class="card-title">Ghost in the Shell</h5>
@@ -125,7 +125,7 @@
                 </div>
             </div>
 
-              <div class="card" style="width: 20rem;">
+              <div class="card shadow-lg p-3 mb-5 bg-white rounded" style="width: 20rem;">
                 <img class="card-img-top" style="height: 195px;" src="./Images/beautyandthebeast.jpg" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">Beauty and the Beast</h5>
@@ -144,20 +144,70 @@
                 </div>
               </div>
 </div>
-
-         
-
-
+<br>
+           <!-- END Showtimes -->         
 
 
 
+           <div class="jumbotron jumbotron-fluid bg-info mt-5 text-center">
+            <div class="container">
+              <h1 class="display-4 text-light">MOVIE DEALS</h1>
+              <p class="lead text-light">Check out our monthly deals....</p>
+              <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#register">See our monthly movie deals!</button>
+            </div>
+          </div>
+
+
+          <!-- Sign Up Form, Code to make popup window appear-->
+          <div class="modal" tabindex="-1" id="register">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Register to get movie deals!</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <!-- Code for the submission form -->
+                  <form>
+                    <fieldset class="form-group">
+                      <label for="firstname">First Name:</label>
+                      <input type="text" class="form-control" id="firstname" placeholder="First Name...">
+                    </fieldset>
+                    <fieldset class="form-group">
+                      <label for="firstname">Last Name:</label>
+                      <input type="text" class="form-control" id="lastname" placeholder="Last Name...">
+                    </fieldset>
+                    <fieldset class="form-group">
+                      <label for="firstname">Email:</label>
+                      <input type="email" class="form-control" id="email" placeholder="Email...">
+                    </fieldset>
+                    <fieldset class="form-group">
+                      <label for="password">Password:</label>
+                      <input type="password" class="form-control" id="password" placeholder="Password...">
+                    </fieldset>
+
+
+                  </form>  
+
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary" >Submit</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+          <!-- End Sign Up Form -->
 
 
 
 
 
-
-           <!-- END Showtimes -->
 
               <div class="w-50 text-center mx-auto" id="deals">
                 <form>
@@ -206,7 +256,7 @@
         trigger: 'focus'
       });
 
-
+      $('#example').tooltip(options)
 
 
     </script>
